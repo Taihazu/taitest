@@ -1,0 +1,399 @@
+{
+	"id": "projectfu",
+	"title": "Fabula Ultima (Project FU)",
+	"description": "An Unofficial Fabula Ultima system for FoundryVTT!",
+	"version": "#{VERSION}#",
+	"compatibility": {
+		"minimum": "12",
+		"verified": "13",
+		"maximum": "13"
+	},
+	"authors": [
+		{
+			"name": "zarick1342",
+			"url": "https://github.com/zarick1342"
+		},
+		{
+			"name": "serpuss"
+		},
+		{
+			"name": "spyrella",
+			"url": "https://github.com/spyrella"
+		},
+		{
+			"name": "Shourn",
+			"url": "https://github.com/Shourn"
+		},
+		{
+			"name": "Azurelol",
+			"url": "https://github.com/Azurelol"
+		}
+	],
+	"scripts": [],
+	"esmodules": ["module/projectfu.mjs"],
+	"styles": ["styles/css/projectfu.css", "styles/projectfu.css"],
+	"packs": [
+		{
+			"label": "NPCs",
+			"type": "Actor",
+			"name": "npcs",
+			"path": "packs/npcs",
+			"system": "projectfu",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"label": "Classes",
+			"type": "Item",
+			"name": "classes",
+			"path": "packs/classes",
+			"system": "projectfu",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"label": "Skills",
+			"type": "Item",
+			"name": "skills",
+			"path": "packs/skills",
+			"system": "projectfu",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"label": "Heroic Skills",
+			"type": "Item",
+			"name": "heroic-skills",
+			"path": "packs/heroic-skills",
+			"system": "projectfu",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"label": "Spells",
+			"type": "Item",
+			"name": "spells",
+			"path": "packs/spells",
+			"system": "projectfu",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"label": "Basic Equipment",
+			"type": "Item",
+			"name": "basic-equipment",
+			"path": "packs/basic-equipment",
+			"system": "projectfu",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"label": "Consumables",
+			"type": "Item",
+			"name": "consumables",
+			"path": "packs/consumables",
+			"system": "projectfu",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"label": "Vehicle Modules",
+			"type": "Item",
+			"name": "vehicle-modules",
+			"path": "packs/vehicle-modules",
+			"system": "projectfu",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"label": "Game Master",
+			"type": "Item",
+			"name": "game-master",
+			"path": "packs/game-master",
+			"system": "projectfu",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"label": "Rollable Tables",
+			"type": "RollTable",
+			"name": "rollable-tables",
+			"path": "packs/rollable-tables",
+			"system": "projectfu",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"label": "Handouts",
+			"type": "JournalEntry",
+			"name": "handouts",
+			"path": "packs/handouts",
+			"system": "projectfu",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"label": "Actor Effects",
+			"type": "Item",
+			"name": "actor-effects",
+			"path": "packs/actor-effects",
+			"system": "projectfu",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"label": "Conditions",
+			"type": "Item",
+			"name": "conditions-effects",
+			"path": "packs/conditions-effects",
+			"system": "projectfu",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"label": "Equipment Effects",
+			"type": "Item",
+			"name": "equipment-effects",
+			"path": "packs/equipment-effects",
+			"system": "projectfu",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"label": "Qualities",
+			"type": "Item",
+			"name": "qualities",
+			"path": "packs/qualities",
+			"system": "projectfu",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		}
+	],
+	"packFolders": [
+		{
+			"name": "Bestiary",
+			"sorting": "a",
+			"color": "#532853",
+			"packs": ["npcs"]
+		},
+		{
+			"name": "Character Creation",
+			"sorting": "a",
+			"color": "#276625",
+			"packs": ["classes", "skills", "heroic-skills", "spells"]
+		},
+		{
+			"name": "Effects",
+			"sorting": "a",
+			"color": "#8b5c00",
+			"packs": ["actor-effects", "conditions-effects", "equipment-effects", "qualities"]
+		},
+		{
+			"name": "Equipment",
+			"sorting": "a",
+			"color": "#005390",
+			"packs": ["basic-equipment", "consumables", "vehicle-modules"]
+		},
+		{
+			"name": "GM Tools",
+			"sorting": "a",
+			"color": "#831101",
+			"packs": ["rollable-tables", "game-master"]
+		},
+		{
+			"name": "Journals",
+			"sorting": "a",
+			"color": "#237B71",
+			"packs": ["handouts"]
+		},
+		{
+			"name": "Pregenerated PCs",
+			"sorting": "a",
+			"color": "#276625",
+			"packs": []
+		}
+	],
+	"languages": [
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "lang/en.json"
+		},
+		{
+			"lang": "it",
+			"name": "Italiano",
+			"path": "lang/it.json"
+		},
+		{
+			"lang": "de",
+			"name": "Deutsch",
+			"path": "lang/de.json"
+		},
+		{
+			"lang": "fr",
+			"name": "Française",
+			"path": "lang/fr.json"
+		},
+		{
+			"lang": "es",
+			"name": "Español",
+			"path": "lang/es.json"
+		},
+		{
+			"lang": "pt-BR",
+			"name": "Português (Brasil)",
+			"path": "lang/pt_BR.json"
+		},
+		{
+			"lang": "ru",
+			"name": "Русский",
+			"path": "lang/ru.json"
+		},
+		{
+			"lang": "pl",
+			"name": "Polish",
+			"path": "lang/pl.json"
+		},
+		{
+			"lang": "cn",
+			"name": "中文",
+			"path": "lang/cn.json"
+		}
+	],
+	"relationships": {
+		"requires": [
+			{
+				"id": "socketlib",
+				"type": "module"
+			}
+		]
+	},
+	"documentTypes": {
+		"Actor": {
+			"character": {
+				"htmlFields": ["biography.value", "biography.gm"]
+			},
+			"npc": {
+				"htmlFields": ["biography.value", "biography.gm"]
+			},
+			"party": {
+				"htmlFields": ["biography.value", "biography.gm"]
+			},
+			"stash": {
+				"htmlFields": ["biography.value", "biography.gm"]
+			}
+		},
+		"ChatMessage": {
+			"abilityUse": {}
+		},
+		"Item": {
+			"basic": {
+				"htmlFields": ["description.value", "description.gm"]
+			},
+			"weapon": {
+				"htmlFields": ["description.value", "description.gm"]
+			},
+			"shield": {
+				"htmlFields": ["description.value", "description.gm"]
+			},
+			"armor": {
+				"htmlFields": ["description.value", "description.gm"]
+			},
+			"accessory": {
+				"htmlFields": ["description.value", "description.gm"]
+			},
+			"consumable": {
+				"htmlFields": ["description.value", "description.gm"]
+			},
+			"treasure": {
+				"htmlFields": ["description.value", "description.gm"]
+			},
+			"class": {
+				"htmlFields": ["description.value", "description.gm"]
+			},
+			"classFeature": {
+				"htmlFields": ["description.value", "description.gm"]
+			},
+			"optionalFeature": {
+				"htmlFields": ["description.value", "description.gm"]
+			},
+			"skill": {
+				"htmlFields": ["description.value", "description.gm"]
+			},
+			"heroic": {
+				"htmlFields": ["description.value", "description.gm"]
+			},
+			"spell": {
+				"htmlFields": ["description.value", "description.gm"]
+			},
+			"miscAbility": {
+				"htmlFields": ["description.value", "description.gm"]
+			},
+			"rule": {
+				"htmlFields": ["description.value", "description.gm"]
+			},
+			"behavior": {
+				"htmlFields": ["description.value", "description.gm"]
+			},
+			"ritual": {
+				"htmlFields": ["description.value", "description.gm"]
+			},
+			"project": {
+				"htmlFields": ["description.value", "description.gm"]
+			},
+			"effect": {
+				"htmlFields": ["description.value", "description.gm"]
+			}
+		}
+	},
+	"flags": {
+		"hotReload": {
+			"extensions": ["css", "hbs", "json"],
+			"paths": ["css", "lang", "templates"]
+		}
+	},
+	"socket": true,
+	"gridDistance": 5,
+	"gridUnits": "ft",
+	"grid": {
+		"distance": 5,
+		"units": "ft"
+	},
+	"primaryTokenAttribute": "resources.hp",
+	"secondaryTokenAttribute": "resources.mp",
+	"license": "LICENSE.txt",
+	"changelog": "CHANGELOG.md",
+	"url": "#{URL}#",
+	"manifest": "#{MANIFEST}#",
+	"download": "#{DOWNLOAD}#"
+}
